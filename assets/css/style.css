@@ -159,8 +159,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.clients .brand-sponsor:hover {
-  background: #ffffff;
+.clients .brand-sponsor:hover { 
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
 }
