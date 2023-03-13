@@ -4,8 +4,11 @@
 :root {
   --primaryColor: #0f1b4c;
 }
+html, body {
+  scroll-behavior: smooth;
+}
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; 
 }
 
 body {
@@ -44,15 +47,23 @@ a {
 /* ============HEADER========== */
 .header {
   background-color: #e6f0ff;
-  height: 100vh;
+  height: calc(100vh - 99px);
+  display: flex;
+  flex-direction: column;
   position: relative;
+  justify-content: center;
 }
-
+.navigation {
+  background-color: #e6f0ff;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
 .navbar {
-  display: inline-block;
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding: 8px 0px 8px;
 }
 
 .navbar ul {
@@ -85,9 +96,6 @@ a {
 .navbar .action .action-btn {
   padding: 13px 16px;
 }
-.hero {
-  margin-top: 130px;
-}
 .hero .information {
   width: 51%; /* 559/1110 */
   height: 371px;
@@ -102,7 +110,7 @@ a {
   margin-bottom: 8px;
 }
 .hero .title {
-  font-weight: 700;
+  font-weight: 650;
   line-height: 1.19;
   font-size: 6.3rem;
   color: #000336;
